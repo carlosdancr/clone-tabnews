@@ -23,6 +23,7 @@ describe("POST /api/v1/users", () => {
           password: "1234",
         }),
       });
+
       expect(response.status).toBe(201);
 
       const responseBody = await response.json();
